@@ -1,0 +1,191 @@
+
+/* The PHP Vault - Main Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101522;
+    color: #ffffff;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 100vh;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Headings */
+
+h1 {
+    color: #f5c451;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #f5c451;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Forms */
+
+form {
+    background: #1c2536;
+    width: 100%;
+    max-width: 450px;
+    margin: 25px auto;
+    padding: 30px;
+    border: 1px solid #38465e;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin: 12px 0 8px;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #586780;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #111111;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #f5c451;
+    outline-offset: 2px;
+}
+
+/* Buttons */
+
+button {
+    display: inline-block;
+    background: #f5c451;
+    color: #101522;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #ffd978;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
+/* Links */
+
+a {
+    color: #f5c451;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Leaderboard */
+
+table {
+    width: 100%;
+    max-width: 700px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background: #1c2536;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #38465e;
+}
+
+th {
+    background: #303d55;
+    color: #f5c451;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Layout */
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+    }
+
+    button {
+        transition: none;
+    }
+}
